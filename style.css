@@ -8,6 +8,22 @@
     margin-top: 2rem
 }
 
+#Bottles h1 {
+    margin-top: 50px;
+    margin-bottom: 100px; /* Adjust the value as needed */
+}
+
+#Diapering h1 {
+    margin-top: 50px;
+    margin-bottom: 100px; /* Adjust the value as needed */
+}
+
+#Toys h1 {
+    margin-top: 50px;
+    margin-bottom: 100px; /* Adjust the value as needed */
+}
+
+
 #Bottles {
     background-image: url('assets/bbt.jpg');
     background-size: cover;
