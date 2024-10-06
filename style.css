@@ -1,0 +1,103 @@
+.carousel-spacing {
+    margin-bottom: 2rem;
+    margin-top: 2rem
+}
+
+.heading-spacing {
+    margin-bottom: 2rem;
+    margin-top: 2rem
+}
+
+#Bottles {
+    background-image: url('assets/bbt.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+#Diapering {
+    background-image: url('assets/dia.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+#Toys {
+    background-image: url('assets/toyss.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.navbar-toggler {
+    border: none; /* Optional: remove border */
+}
+
+.navbar-toggler-icon {
+    display: block; /* Ensure the span behaves as a block */
+    width: 30px; /* Width of the lines */
+    height: 30px; /* Height of the button */
+    position: relative; /* For positioning lines */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: "";
+    display: block;
+    width: 100%; /* Full width of the icon */
+    height: 4px; /* Height of the lines */
+    background-color: orange; /* Set line color to white */
+    position: absolute;
+    left: 0; /* Center lines */
+    transition: all 0.3s ease; /* Optional: smooth transition */
+}
+
+.navbar-toggler-icon::before {
+    top: 6px; /* Position of the first line */
+}
+
+.navbar-toggler-icon span {
+    top: 14px; /* Position of the middle line */
+}
+
+.navbar-toggler-icon::after {
+    top: 22px; /* Position of the last line */
+}
+
+.carousel-item {
+    position: relative; /* Make carousel item the positioned ancestor */
+}
+
+.card-overlay {
+    position: absolute; /* Position the overlay absolutely */
+    bottom: 200px; /* Distance from the bottom */
+    left: 200px; /* Distance from the left */
+    z-index: 1; /* Ensure it appears above the image */
+    width: 90%; /* Width of the card */
+    max-width: 300px; /* Max width of the card */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.carousel-img {
+    height: 400px; /* Set a fixed height for the images */
+    object-fit: cover; /* Cover to maintain aspect ratio while filling the container */
+    width: 100%; /* Ensure the image takes the full width */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 10%; /* Adjust this value to move it further up or down */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; /* Change this to your preferred text color */
+    width: 100%; /* Ensures the caption takes the full width */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
